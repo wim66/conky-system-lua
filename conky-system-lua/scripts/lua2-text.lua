@@ -2,12 +2,11 @@
 #########################################################
 # conky-system-lua					#
 # by +WillemO @wim66					#
-# 26-dec-16						#
+# v1.0 26-dec-16 v1.1 28-dec-16				#
 #							#
 #########################################################
-
-
 ]]
+
 
 --[[TEXT WIDGET v1.3 by Wlourf 25/06/2010
 This widget can drawn texts set in the "text_settings" table with some parameters
@@ -87,7 +86,7 @@ function conky_draw_text()
 			x=20,
 			y=40,
 			orientation="nn",
-			colour={{0,0XFF0000,1},{0.5,0xFFFFFF,1}, {1,0x0000FF,1}},
+			colour={{0,0XFFFFFF,0.2},{0.5,0xFFFFFF,0.7}, {1,0xffffff,1}},
 		},
 
 		{
@@ -98,7 +97,8 @@ function conky_draw_text()
 			bold=false,
 			x=20,
 			y=60,
-			color={{0,0xFFFFFF,1}},
+			orientation="nn",
+			colour={{0,0XFFFFFF,0.2},{0.5,0xFFFFFF,0.7}, {1,0xffffff,1}},
 		},
 
 		{

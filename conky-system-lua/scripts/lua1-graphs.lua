@@ -2,12 +2,11 @@
 #########################################################
 # conky-system-lua					#
 # by +WillemO @wim66					#
-# 26-dec-16						#
+# v1.0 26-dec-16 v1.1 28-dec-16				#
 #							#
 #########################################################
-
-
 ]]
+
 
 --[[ GRAPH widget v1.1 by wlourf (07.01.2011)
 	this widget draws some graphs with some effects 
