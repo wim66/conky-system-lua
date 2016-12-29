@@ -1,11 +1,13 @@
 
 -- Set the path to the scripts foder
-package.path = "/home/willem/.conky/conky-system-lua/scripts/?.lua"
+package.path = "/home/willem/git/conky-system-lua/conky-system-lua/scripts/?.lua"
 
 
--- Set wifi interface for bars & graphs.
-var_WIFI = "wlp3s0"	-- Also edit lua2-text.lua wifi settings
-
+-- Set wifi interface for all scripts here
+var_WIFI = "wlp3s0" --bars & graphs
+--for text
+var_WIFI2 = "Signal ${wireless_link_qual_perc wlp3s0}%"
+var_WIFI3 = "Downloadspeed  ${downspeed wlp3s0}                Uploadspeed  ${upspeed wlp3s0}"
 
 
 

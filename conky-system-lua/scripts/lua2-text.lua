@@ -212,7 +212,7 @@ function conky_draw_text()
 		},
 
 		{
-			text=conky_parse("Downloadspeed  ${downspeed wlp3s0}                Uploadspeed  ${upspeed wlp3s0}"),  -- Set wifi here --
+			text=conky_parse(var_WIFI3),  -- Set wifi here --
 			font_name="ubuntu",
 			font_size=14,
 			h_align="l",
@@ -223,7 +223,7 @@ function conky_draw_text()
 		},
 
 		{
-			text=conky_parse("Signal ${wireless_link_qual_perc wlp3s0}%"),  -- Set wifi here --
+			text=conky_parse(var_WIFI2),  -- Set wifi here --
 			font_name="ubuntu",
 			font_size=14,
 			h_align="c",

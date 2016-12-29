@@ -110,24 +110,25 @@ function conky_main_box()
 	---------------------- PARAMETERS BEGIN HERE
     local boxes_settings={
 
-        {
-	x=7,y=7,w=340,h=532, colour= { {1,0x000000,0.75} }, 
+{
+	x=7,y=7,w=340,h=532,
+	colour= { {1,0x000000,0.75} }, 
         corners={ {"circle",5},}
 	},
 
 	{
-	x=1,y=1,w=352,h=544, colour= { {1,0x34495E,1} }, 
+	x=1,y=1,w=352,h=544,
+	colour= { {1,0x34495E,1} }, 
         corners={ {"circle",5},}, border=4 
 	},
 
 	{
-	x=5,y=5,w=344,h=536, colour= { {0,0xFFFFFF,0.05}, {0.5,0xC2C2C2,0.2}, {1,0xFFFFFF,0.05}}, linear_gradient={0,30,0,506}},
-        --corners={ {"circle",5},},
-	
-        
+	x=5,y=5,w=344,h=536,
+	colour= { {0,0xFFFFFF,0.05}, {0.5,0xC2C2C2,0.2}, {1,0xFFFFFF,0.05}}, linear_gradient={0,30,0,506},
+	draw_me=true,
+	},
 
-    }
-
+}
 
     ---------------------------- PARAMETERS END HERE
     
