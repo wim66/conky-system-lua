@@ -1,8 +1,8 @@
 --[[
 #########################################################
-# conky-system-lua					#
+# conky-system-lua-V2					#
 # by +WillemO @wim66					#
-# v1.0 26-dec-16 v1.1 28-dec-16				#
+# v1.0 30-dec-16					#
 #							#
 #########################################################
 ]]
@@ -115,13 +115,12 @@ function set_settings()
  	autoscale=false,
 	width=100,
 	height=30,
-	nb_values=100,
 	bg_bd_size=0.5,
 	bg_bd_colour = { {0,0x5294E2,0.7}},
 	bg_colour = {{0,0x5294E2,0.1},{0.5,0x5294E2,0.7},{1,0x5294E2,0.1}},
-	fg_colour = { {0,0xFF0000,1},{0.5,0x008B00,0.5},{1,0x00FF00,0.5}},
+	fg_colour = { {0,0xFF2021,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
 	fg_bd_size=2,
-	fg_bd_colour = { {0,0xFF0000,1},{0.5,0x006600,1},{1,0x00FF00,1}},
+	fg_bd_colour = { {0,0xFF0000,1},{0.66,0x006600,1},{1,0x00FF00,1}},
 	foreground=true
 },
 
@@ -134,13 +133,12 @@ function set_settings()
  	autoscale=false,
 	width=100,
 	height=30,
-	nb_values=100,
 	bg_bd_size=0.5,
 	bg_bd_colour = { {0,0x5294E2,0.7}},
 	bg_colour = {{0,0x5294E2,0.1},{0.5,0x5294E2,0.7},{1,0x5294E2,0.1}},
-	fg_colour = { {0,0xFF0000,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
+	fg_colour = { {0,0xFF2021,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
 	fg_bd_size=2,
-	fg_bd_colour = { {0,0xFF0000,1},{0.5,0x006600,1},{1,0x00FF00,1}},
+	fg_bd_colour = { {0,0xFF0000,1},{0.66,0x006600,1},{1,0x00FF00,1}},
 	foreground=true
 },
 
@@ -153,13 +151,12 @@ function set_settings()
  	autoscale=true,
 	width=100,
 	height=30,
-	--nb_values=100,
 	bg_bd_size=0.5,
 	bg_bd_colour = { {0,0x5294E2,0.7}},
 	bg_colour = {{0,0x5294E2,0.1},{0.5,0x5294E2,0.7},{1,0x5294E2,0.1}},
-	fg_colour = { {0,0xFF0000,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
+	fg_colour = { {0,0xFF2021,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
 	fg_bd_size=2,
-	fg_bd_colour = { {0,0xFF0000,1},{0.5,0x006600,1},{1,0x00FF00,1}},
+	fg_bd_colour = { {0,0xFF0000,1},{0.66,0x006600,1},{1,0x00FF00,1}},
 	foreground=true
 },
 
@@ -172,13 +169,12 @@ function set_settings()
  	autoscale=true,
 	width=100,
 	height=30,
-	--nb_values=100,
 	bg_bd_size=0.5,
 	bg_bd_colour = { {0,0x5294E2,0.7}},
 	bg_colour = {{0,0x5294E2,0.1},{0.5,0x5294E2,0.7},{1,0x5294E2,0.1}},
-	fg_colour = { {0,0xFF0000,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
+	fg_colour = { {0,0xFF2021,1},{0.5,0x006600,0.5},{1,0x00FF00,0.5}},
 	fg_bd_size=2,
-	fg_bd_colour = { {0,0xFF0000,1},{0.5,0x006600,1},{1,0x00FF00,1}},
+	fg_bd_colour = { {0,0xFF0000,1},{0.66,0x006600,1},{1,0x00FF00,1}},
 	foreground=true
 },
 

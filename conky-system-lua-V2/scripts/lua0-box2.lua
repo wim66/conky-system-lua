@@ -1,13 +1,12 @@
 
 --[[
 #########################################################
-# conky-system-lua					#
+# conky-system-lua-V2					#
 # by +WillemO @wim66					#
-# v1.0 26-dec-16 v1.1 28-dec-16				#
+# v1.0 30-dec-16					#
 #							#
 #########################################################
 ]]
-
 
 --[[BOX WIDGET v1.1 by Wlourf 27/01/2011
 This widget can drawn some boxes, even circles in your conky window

@@ -1,8 +1,8 @@
 --[[
 #########################################################
-# conky-system-lua					#
+# conky-system-lua-V2					#
 # by +WillemO @wim66					#
-# v1.0 26-dec-16 v1.1 28-dec-16				#
+# v1.0 30-dec-16					#
 #							#
 #########################################################
 ]]
@@ -108,35 +108,13 @@ function conky_draw_text()
 			y=90,
 
 		},
---[[
-		{
-			text=conky_parse("${cpu cpu1}%"),
-			font_name="ubuntu",
-			font_size=12,
-			h_align="r",
-			bold=false,
-			x=166,
-			y=85,
-			colour={{0,0XFFFFFF,0.8}},
-		},
-]]
+
 		{
 			text=conky_parse("CPU2  ${execi 5 sensors|grep 'Core 1'|awk '{print $3}'}"),
 			x=143,
 			y=90,
 		},
---[[
-		{
-			text=conky_parse("${cpu cpu2}%"),
-			font_name="ubuntu",
-			font_size=12,
-			h_align="r",
-			bold=false,
-			x=338,
-			y=85,
-			colour={{0,0XFFFFFF,0.8}},
-		},
-]]
+
 		{
 			text="Memory",
 			h_align="c",
@@ -184,14 +162,14 @@ function conky_draw_text()
 		},
 
 		{
-			text=conky_parse(var_WIFI2),  -- Set wifi here --
+			text=conky_parse(var_WIFI2),
 			x=23,
 			y=316,
 			--colour={{0,0XFFFFFF,0.8}},
 		},
 
 		{
-			text=conky_parse(var_WIFI3),  -- Set wifi here --
+			text=conky_parse(var_WIFI3),
 			x=50,
 			y=390,
 			--colour={{0,0XFFFFFF,0.8}},
