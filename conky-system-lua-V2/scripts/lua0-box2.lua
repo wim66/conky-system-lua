@@ -125,7 +125,7 @@ function conky_main_box()
 	{
 	x=5,y=5,w=249,h=532,
 	colour= { {0,0xFFFFFF,0.05}, {0.5,0xC2C2C2,0.2}, {1,0xFFFFFF,0.05}}, linear_gradient={0,30,0,506},
-	draw_me=false,
+	draw_me=true,
 	},
 
 }
