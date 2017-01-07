@@ -1,6 +1,6 @@
 
 -- Set the path to the scripts foder
-package.path = "/home/willem/git/conky-system-lua/conky-system-lua-V2/scripts/?.lua"
+package.path = "./scripts/?.lua"
 
 
 -- Set wifi interface for all scripts here
