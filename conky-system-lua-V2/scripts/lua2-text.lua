@@ -83,36 +83,40 @@ function conky_draw_text()
     text_settings={
 
 		{
-			text=conky_parse( "${execi 10000 lsb_release -d | cut -f 2}" ),
+			text=conky_parse("${if_existing /usr/bin/lsb_release} ${execi 10000 lsb_release -d | cut -f 2}${else} $distribution  ${endif}"),
 			font_name="ubuntu",
 			font_size=22,
 			x=20,
 			y=33,
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse( "Kernel ${kernel}" ),
 			x=20,
 			y=50,
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse( "Uptme:       ${uptime}" ),
 			x=20,
 			y=67,
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse("CPU1  ${execi 5 sensors|grep 'Core 0'|awk '{print $3}'}"),
 			x=24,
-			y=90,
-
+			y=87,
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse("CPU2  ${execi 5 sensors|grep 'Core 1'|awk '{print $3}'}"),
 			x=143,
-			y=90,
+			y=87,
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
@@ -120,7 +124,7 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=150,
-			--colour={{0,0XFFFFFF,1}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
@@ -128,7 +132,7 @@ function conky_draw_text()
 
 			x=20,
 			y=166,
-			--colour={{0,0XFFFFFF,0.8}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
@@ -136,21 +140,21 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=212,
-			--colour={{0,0XFFFFFF,1}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse("Root Used ${fs_used /}              Free ${fs_free /}"),
 			x=20,
 			y=225,
-			--colour={{0,0XFFFFFF,0.8}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse("Home Used ${fs_used /home/}         Free ${fs_free /home/}"),
 			x=20,
 			y=260,
-			--colour={{0,0XFFFFFF,0.8}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
@@ -158,21 +162,21 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=300,
-			--colour={{0,0XFFFFFF,1}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse(var_WIFI2),
 			x=23,
 			y=316,
-			--colour={{0,0XFFFFFF,0.8}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
 			text=conky_parse(var_WIFI3),
 			x=50,
 			y=390,
-			--colour={{0,0XFFFFFF,0.8}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
 		{
@@ -180,21 +184,21 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=425,
-			--colour={{0,0XFFFFFF,1}},
+			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
 		},
 
-		{text=conky_parse("${top name 1}"),x=20,y=448,},
-		{text=conky_parse("${top name 2}"),x=20,y=466,},
-		{text=conky_parse("${top name 3}"),x=20,y=484,},
-		{text=conky_parse("${top name 4}"),x=20,y=502,},
-		{text=conky_parse("${top name 5}"),x=20,y=520,},
+		{text=conky_parse("${top name 1}"),x=20,y=448,colour={{0,0X00FFFF,1}},font_size=16,},
+		{text=conky_parse("${top name 2}"),x=20,y=466,colour={{0,0X00FFFF,0.8}},font_size=16,},
+		{text=conky_parse("${top name 3}"),x=20,y=484,colour={{0,0X00FFFF,0.6}},font_size=16,},
+		{text=conky_parse("${top name 4}"),x=20,y=502,colour={{0,0X00FFFF,0.4}},font_size=16,},
+		{text=conky_parse("${top name 5}"),x=20,y=520,colour={{0,0X00FFFF,0.2}},font_size=16,},
 
 
-		{text=conky_parse("${top cpu 1}%"),x=228,y=448,h_align="r",},
-		{text=conky_parse("${top cpu 2}%"),x=228,y=466,h_align="r",},
-		{text=conky_parse("${top cpu 3}%"),x=228,y=484,h_align="r",},
-		{text=conky_parse("${top cpu 4}%"),x=228,y=502,h_align="r",},
-		{text=conky_parse("${top cpu 5}%"),x=228,y=520,h_align="r",},
+		{text=conky_parse("${top cpu 1}%"),x=228,y=448,h_align="r",colour={{0,0X00FFFF,1}},font_size=16,},
+		{text=conky_parse("${top cpu 2}%"),x=228,y=466,h_align="r",colour={{0,0X00FFFF,0.8}},font_size=16,},
+		{text=conky_parse("${top cpu 3}%"),x=228,y=484,h_align="r",colour={{0,0X00FFFF,0.6}},font_size=16,},
+		{text=conky_parse("${top cpu 4}%"),x=228,y=502,h_align="r",colour={{0,0X00FFFF,0.4}},font_size=16,},
+		{text=conky_parse("${top cpu 5}%"),x=228,y=520,h_align="r",colour={{0,0X00FFFF,0.2}},font_size=16,},
 
 	}
 
