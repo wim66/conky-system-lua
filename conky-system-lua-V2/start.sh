@@ -16,7 +16,4 @@ killall conky
     echo "\nexiting......"
     sleep 2
 
-    notify-send "Conky up and running" -i emblem-default-symbolic.svg
-    paplay /usr/share/sounds/freedesktop/stereo/complete.oga
-
 exit

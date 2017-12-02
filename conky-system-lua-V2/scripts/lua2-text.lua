@@ -88,35 +88,35 @@ function conky_draw_text()
 			font_size=22,
 			x=20,
 			y=33,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,1}},
 		},
 
 		{
 			text=conky_parse( "Kernel ${kernel}" ),
 			x=20,
 			y=50,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
 			text=conky_parse( "Uptme:       ${uptime}" ),
 			x=20,
 			y=67,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
 			text=conky_parse("CPU1  ${execi 5 sensors|grep 'Core 0'|awk '{print $3}'}"),
 			x=24,
 			y=87,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
 			text=conky_parse("CPU2  ${execi 5 sensors|grep 'Core 1'|awk '{print $3}'}"),
 			x=143,
 			y=87,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
@@ -124,7 +124,7 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=150,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,1}},
 		},
 
 		{
@@ -132,7 +132,7 @@ function conky_draw_text()
 
 			x=20,
 			y=166,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
@@ -140,21 +140,21 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=212,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,1}},
 		},
 
 		{
 			text=conky_parse("Root Used ${fs_used /}              Free ${fs_free /}"),
 			x=20,
 			y=225,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
 			text=conky_parse("Home Used ${fs_used /home/}         Free ${fs_free /home/}"),
 			x=20,
 			y=260,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
@@ -162,21 +162,21 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=300,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,1}},
 		},
 
 		{
 			text=conky_parse(var_WIFI2),
 			x=23,
 			y=316,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
 			text=conky_parse(var_WIFI3),
 			x=50,
 			y=390,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,0.7}},
 		},
 
 		{
@@ -184,7 +184,7 @@ function conky_draw_text()
 			h_align="c",
 			x=xc,
 			y=425,
-			colour={{0,0X00FFFF,1},{0.5,0x00FFCC,75},{1,0X00FFFF,0.5}},
+			colour={{0,0x00FFFF,1}},
 		},
 
 		{text=conky_parse("${top name 1}"),x=20,y=448,colour={{0,0X00FFFF,1}},font_size=16,},
